@@ -1,0 +1,118 @@
+/* @import url(../body/style.css);
+@import url(../footer/style.css); */
+@import url(../body/style.css);
+@import url(../footer/style.css);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins Medium"), local("Poppins-Medium") url("../../fonts/Poppins-Medium.ttf");
+}
+
+nav {
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1F2E35;
+  color: white;
+  width: 100%;
+}
+nav .hidden_bar {
+  display: none;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 600;
+  gap: 10px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+nav ul a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li:nth-child(5) button {
+  padding: 10px 20px;
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid #BCD0E5;
+}
+nav ul li:nth-child(6) button {
+  padding: 11px 20px;
+  background: #02897A;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+nav ul li:nth-child(7) button {
+  border-radius: 50%;
+  border: none;
+  display: grid;
+  place-items: center;
+}
+
+@media (min-width: 769px) and (max-width: 989px) {
+  nav ul li:nth-child(1) a,
+  nav ul li:nth-child(2) a,
+  nav ul li:nth-child(3) a,
+  nav ul li:nth-child(4) a {
+    display: none;
+  }
+  nav ul li:nth-child(5) button {
+    display: flex;
+  }
+  nav ul li:nth-child(6) button {
+    display: flex;
+  }
+  nav ul li:nth-child(7) button {
+    display: flex;
+  }
+}
+@media (min-width: 448px) and (max-width: 768px) {
+  nav {
+    padding: 20px;
+  }
+  nav ul {
+    gap: 10px;
+  }
+  nav ul li:nth-child(1) a,
+  nav ul li:nth-child(2) a,
+  nav ul li:nth-child(3) a,
+  nav ul li:nth-child(4) a {
+    display: none;
+  }
+  nav ul li:nth-child(5) button {
+    display: block;
+    padding: 6px 12px;
+  }
+  nav ul li:nth-child(6) button {
+    display: flex;
+    padding: 6px 12px;
+  }
+  nav ul li:nth-child(7) button {
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    border: none;
+  }
+}
+@media (max-width: 447px) {
+  nav ul {
+    display: none;
+  }
+  nav .hidden_bar {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */
