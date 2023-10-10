@@ -1,17 +1,9 @@
-/* @import url(../body/style.css);
-@import url(../footer/style.css); */
 @import url(../body/style.css);
 @import url(../footer/style.css);
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-@font-face {
-  font-family: "Poppins";
-  src: local("Poppins Medium"), local("Poppins-Medium") url("../../fonts/Poppins-Medium.ttf");
 }
 
 nav {

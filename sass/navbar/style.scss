@@ -2,10 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    @font-face {
-        font-family: 'Poppins';
-        src: local('Poppins Medium'), local('Poppins-Medium') url("../../fonts/Poppins-Medium.ttf");
-    }
+    font-family: 'Poppins', sans-serif;
+    
 }
 nav{
     padding: 20px 50px;
